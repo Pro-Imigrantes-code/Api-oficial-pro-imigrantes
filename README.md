@@ -2,22 +2,29 @@
 
 Esta é a API oficial do site dos estudantes do Programa Pro Imigrantes na Universidade Federal da Fronteira Sul.
 
-## Instalação
+---
+
+## 🚀 Instalação
 
 Para instalar este projeto, você precisa seguir estas etapas:
 
 1. Clone o repositório para o seu computador.
-2. Execute `npm install` para instalar as dependências.
-3. Execute `npm start` para iniciar o servidor.
+2. Tenha uma versão recente do Node.js instalada.
+3. Execute `npm install` para instalar as dependências.
+4. Execute `npm start` para iniciar o servidor.
 
-## Uso
+---
+
+## 📝 Uso
 
 Para usar este projeto, siga estas etapas:
 
 1. Acesse `http://localhost:3000` no seu navegador.
 2. Divirta-se com o projeto!
 
-## Contribuição
+---
+
+## 🤝 Contribuição
 
 Se você quiser contribuir para este projeto, siga estas etapas:
 
@@ -26,6 +33,10 @@ Se você quiser contribuir para este projeto, siga estas etapas:
 3. Faça commit de suas alterações (`git commit -am 'Adiciona uma nova funcionalidade'`).
 4. Faça push para a branch (`git push origin feature/nova-funcionalidade`).
 5. Abra uma pull request.
+
+---
+
+Esta API foi desenvolvida por alunos ingressantes através do programa Pro Imigrantes no curso de Ciência da Computação na Universidade Federal da Fronteira Sul.
 
 ## Licença
 
