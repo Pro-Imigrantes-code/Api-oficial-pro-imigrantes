@@ -30,3 +30,7 @@ Se você quiser contribuir para este projeto, siga estas etapas:
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
+
+Esta API foi desenvolvida por alguns alunos do curso de Ciência da Computação na Universidade Federal da Fronteira Sul.
+
+[![Imagem dos Alunos](https://avatars.githubusercontent.com/u/98717411?v=4)](https://github.com/angemydelson)
