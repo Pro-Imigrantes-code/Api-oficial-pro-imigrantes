@@ -1,4 +1,4 @@
-# API Oficial do Site dos Estudantes do Programa Pro Imigrantes na Universidade Federal da Fronteira Sul
+# API Oficial 
 
 Esta é a API oficial do site dos estudantes do Programa Pro Imigrantes na Universidade Federal da Fronteira Sul.
 
