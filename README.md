@@ -33,8 +33,8 @@ Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licens
 
 Esta API foi desenvolvida por alguns alunos do curso de Ciência da Computação na Universidade Federal da Fronteira Sul.
 
-[![Imagem dos Alunos](https://avatars.githubusercontent.com/u/98717411?v=4)](https://github.com/angemydelson)
 
-<a href="https://github.com/angemydelson">
-  <img src="https://avatars.githubusercontent.com/u/98717411?v=4" alt="Imagem dos Alunos" style="width:200px;height:200px;">
-</a>
+
+[<img src="https://avatars.githubusercontent.com/u/98717411?v=4" alt="Imagem da Pessoa 1" style="width:200px;height:200px;">](https://github.com/angemydelson)
+[<img src="https://avatars.githubusercontent.com/u/100454337?v=4" alt="Imagem da Pessoa 2" style="width:200px;height:200px;">](https://github.com/Jacquet12)
+[<img src="URL_da_Imagem_Pessoa3" alt="Imagem da Pessoa 3" style="width:200px;height:200px;">](https://github.com/pessoa3)
