@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer';
 import jwt from 'jsonwebtoken';
-import { LoginData } from '../models/loginModel'; 
+
 
 export const loginService = {
     login: async (username: string, password: string): Promise<string> => {
@@ -20,9 +20,9 @@ export const loginService = {
         await page.waitForNavigation({ timeout: 60000 });
         
         const isLoggedIn = page.url() === successURL;
-        
+        const SECRET_KEY = 'Chapeco2022@';
         if (isLoggedIn) {
-            const token = jwt.sign({ username }, 'secreto202');
+            const token = jwt.sign({ username }, SECRET_KEY);
             await browser.close();
             return token;
         } else {
