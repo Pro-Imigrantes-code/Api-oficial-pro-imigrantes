@@ -36,9 +36,8 @@ Se você quiser contribuir para este projeto, siga estas etapas:
 
 ---
 
-Esta API foi desenvolvida por alunos ingressantes através do programa Pro Imigrantes no curso de Ciência da Computação na Universidade Federal da Fronteira Sul.
-
 ## Licença
+
 
 
 Esta API foi desenvolvida por alunos ingressantes através do programa Pro Imigrantes no curso de Ciência da Computação na Universidade Federal da Fronteira Sul.
