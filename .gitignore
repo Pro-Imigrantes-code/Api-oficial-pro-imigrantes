@@ -1,0 +1,9 @@
+# Arquivos de compilação do TypeScript
+/dist/
+
+.vscode/
+
+/node_modules/
+
+
+tsconfig.json
