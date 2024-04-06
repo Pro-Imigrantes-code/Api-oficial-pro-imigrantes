@@ -29,9 +29,9 @@ Se você quiser contribuir para este projeto, siga estas etapas:
 
 ## Licença
 
-Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
 
-Esta API foi desenvolvida por alunos ingressantes atravaes do programa pro imigrantes no curso de Ciência da Computação na Universidade Federal da Fronteira Sul.
+Esta API foi desenvolvida por alunos ingressantes através do programa Pro Imigrantes no curso de Ciência da Computação na Universidade Federal da Fronteira Sul.
+
 
 
 
