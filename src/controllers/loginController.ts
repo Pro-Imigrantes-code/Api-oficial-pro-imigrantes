@@ -1,16 +1,33 @@
 import { Request, Response } from 'express';
 import { loginService } from '../services/loginService';
-import { LoginData } from '../models/loginModel'; 
+import User  from '../models/user'; 
 
-export const loginController = {
-    login: async (req: Request, res: Response) => {
+class LoginController {
+    public async login(req: Request, res: Response): Promise<void> {
         try {
-            const { username, password } = req.body as LoginData; 
-            const token = await loginService.login(username, password);
-            res.status(200).json({ success: true, message: 'Login bem-sucedido', token });
+            const { username, password } = req.body;
+            const result = await loginService.login(username, password);
+            const newUser = await User.create({
+                nome: result.userInfo.nome,
+                matricula: result.userInfo.matricula,
+                curso: result.userInfo.curso,
+                nivel: result.userInfo.nivel,
+                status: result.userInfo.status,
+                email: result.userInfo.email,
+                entrada: result.userInfo.entrada,
+                integralizacao: result.userInfo.integralizacao,
+            });
+
+            res.status(200).json({ success: true, message: 'Login bem-sucedido', token: result.token, userInfo: newUser });
         } catch (error) {
             console.error("Erro durante o login:", error);
-            res.status(500).json({ success: false, message: 'Erro durante o login' });
+            let errorMessage = 'Erro durante o login';
+            if (error instanceof Error) {
+                errorMessage = error.message || errorMessage;
+            }
+            res.status(500).json({ success: false, message: errorMessage });
         }
     }
-};
+}
+
+export const loginController = new LoginController();
