@@ -1,6 +1,7 @@
 import { DataTypes, Sequelize } from 'sequelize';
 import dotenv from 'dotenv';
 import migration from '../migrations/userInfo';
+import migration1 from '../migrations/publication';
 
 dotenv.config();
 
@@ -22,6 +23,7 @@ const sequelize = new Sequelize({
 async function runMigration(sequelize: Sequelize) { 
     try {
         await migration.up(sequelize.getQueryInterface(), DataTypes); 
+        await migration1.up(sequelize.getQueryInterface(), DataTypes)
         console.log('Migration executada com sucesso.');
     } catch (error) {
         console.error('Erro ao executar a migração:', error);

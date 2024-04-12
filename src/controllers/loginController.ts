@@ -7,10 +7,10 @@ class LoginController {
         try {
             const { username, password } = req.body;
             const result = await loginService.login(username, password);
-            const existingUser = await User.findOne({ where: { email: result.userInfo.email } });
+            const existingUser = await User.findOne({ where: { email: result.userInfo.email, integralizacao: result.userInfo.integralizacao } });
 
             if (existingUser) {
-                res.status(200).json({ success: true, message: 'Usuário encontrado', token: result.token });
+                res.status(200).json({ message: 'Usuário encontrado', token: result.token });
                 return; 
             }
             const newUser = await User.create({
@@ -24,7 +24,7 @@ class LoginController {
                 integralizacao: result.userInfo.integralizacao,
             });
 
-            res.status(200).json({ success: true, message: 'Login bem-sucedido', token: result.token, userInfo: newUser });
+            res.status(200).json({ message: 'Login bem-sucedido', token: result.token, userInfo: newUser });
         } catch (error) {
             console.error("Erro durante o login:", error);
             let errorMessage = 'Erro durante o login';

@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 import { sequelize } from './config/database'; 
 import loginRoutes from './routes/login';
+import publicationRoutes from './routes/publication';
 import cors from 'cors'; 
 
 const app = express();
@@ -18,6 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/api', loginRoutes);
+app.use('/api', publicationRoutes);
 
 const PORT = process.env.PORT || 5000;
 
