@@ -1,5 +1,5 @@
 import { DataTypes, Model } from 'sequelize';
-import { sequelize } from '../config/database'; // Importe a instância sequelize corretamente
+import { sequelize } from '../config/database'; 
 
 interface UserAttributes {
     id?: number;
@@ -80,7 +80,7 @@ User.init({
         defaultValue: DataTypes.NOW
     }
 }, {
-    sequelize: sequelize, // Use a instância do Sequelize corretamente
+    sequelize: sequelize, 
     tableName: 'users'
 });
 
