@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
-import { sequelize } from './config/database'; // Importe sequelize em vez de pool
+import { sequelize } from './config/database'; 
 import loginRoutes from './routes/login';
 import cors from 'cors'; 
 
@@ -21,7 +21,7 @@ app.use('/api', loginRoutes);
 
 const PORT = process.env.PORT || 5000;
 
-sequelize.authenticate() // Use authenticate do Sequelize
+sequelize.authenticate() 
   .then(() => {
     console.log('Database connection successful!');
     app.listen(PORT, () => {
