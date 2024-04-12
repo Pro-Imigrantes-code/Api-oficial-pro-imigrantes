@@ -1,5 +1,5 @@
 import { DataTypes, Model } from 'sequelize';
-import { sequelize } from '../config/database'; 
+import { sequelize } from '../config/database'; // Importe a instância sequelize corretamente
 
 interface UserAttributes {
     id?: number;
