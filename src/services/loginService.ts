@@ -1,4 +1,3 @@
-
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 import puppeteer from 'puppeteer';
@@ -41,13 +40,11 @@ class LoginService {
     
             if (isLoggedIn) {
                 const userInfo = await page.evaluate(() => {
-                    // Ajuste a função cleanText para aceitar string, null ou undefined
                     const cleanText = (text: string | null | undefined) => {
-                        if (text === null || text === undefined) return '';  // Retorna uma string vazia se o texto for null ou undefined
-                        return text.replace(/\s+/g, ' ').trim();  // Limpa o texto como antes
+                        if (text === null || text === undefined) return '';  
+                        return text.replace(/\s+/g, ' ').trim();
                     };
                 
-                    // Uso da função cleanText com valores que podem ser string, null, ou undefined
                     const nome = cleanText(document.evaluate('//*[@id="perfil-docente"]/p[1]/span/small/b', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue?.textContent);
                     const matricula = document.evaluate('//*[@id="agenda-docente"]/table/tbody/tr[1]/td[2]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue?.textContent;
                     const curso = cleanText(document.evaluate('//*[@id="agenda-docente"]/table/tbody/tr[2]/td[2]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue?.textContent);
@@ -60,8 +57,6 @@ class LoginService {
                     return { nome, matricula, curso, nivel, status, email, entrada, integralizacao};
                 });
                 
-                
-    
                 const token = jwt.sign({ username }, this.SECRET_KEY);
                 return { token, userInfo }; 
             } else {
@@ -74,8 +69,6 @@ class LoginService {
             await browser.close();
         }
     }
-    
-
     
 }
 
