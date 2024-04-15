@@ -51,4 +51,5 @@ Esta API foi desenvolvida por alunos ingressantes através do programa Pro Imigr
 [<img src="https://avatars.githubusercontent.com/u/114761552?v=4" alt="Imagem da Pessoa 3" style="width:200px;height:200px;">](https://github.com/Jeffleyg)
 [<img src="https://avatars.githubusercontent.com/u/115166450?v=4" alt="Imagem da Pessoa 3" style="width:200px;height:200px;">](https://github.com/ashleysaintlouis)
 [<img src="https://avatars.githubusercontent.com/u/123388945?v=4" alt="Imagem da Pessoa 3" style="width:200px;height:200px;">](https://github.com/Lindy20l)
+[<img src="https://avatars.githubusercontent.com/u/75543368?v=4" alt="Imagem da Pessoa 3" style="width:200px;height:200px;">](https://github.com/kerby509)
 [<img src="https://avatars.githubusercontent.com/u/56324874?v=4" alt="Imagem da Pessoa 3" style="width:200px;height:200px;">](https://github.com/babas175)
