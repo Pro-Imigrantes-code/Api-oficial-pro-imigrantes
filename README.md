@@ -10,7 +10,7 @@ Para instalar este projeto, você precisa seguir estas etapas:
 
 1. Clone o repositório para o seu computador.
 2. Tenha uma versão recente do Node.js instalada.
-3. Crie um banco de dados postgres chamado de proImigrantes
+3. Crie um banco de dados postgres chamado de `proImigrantes`
 4. Execute `npm install` para instalar as dependências.
 5. Execute `npm start` para iniciar o servidor.
 
