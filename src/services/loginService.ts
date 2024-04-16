@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 import puppeteer from 'puppeteer';
+import { Admin } from '../models/admin';
 
 dotenv.config();
 
@@ -67,6 +68,34 @@ class LoginService {
             throw new Error('Erro durante o processo de login');
         } finally {
             await browser.close();
+        }
+    }
+
+    public async addAdmin(adminData: any): Promise<Admin> {
+        try {
+            const admin = await Admin.create(adminData);
+            return admin;
+        } catch (error) {
+            console.error("Error adding new admin:", error);
+            throw error;
+        }
+    }
+
+    public async deleteAdmin(email: string): Promise<boolean> {
+        const admin = await Admin.findByPk(email);
+        if (!admin) {
+            return false;
+        }
+        await admin.destroy();
+        return true;
+    }
+
+    public async getAllAdmins(): Promise<Admin[]> {
+        try {
+            return await Admin.findAll();
+        } catch (error) {
+            console.error("Failed to retrieve admins:", error);
+            throw error;
         }
     }
     
